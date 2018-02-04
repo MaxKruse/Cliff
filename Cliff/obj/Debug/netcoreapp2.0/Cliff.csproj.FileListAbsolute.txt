@@ -1,0 +1,11 @@
+C:\Users\Max\source\repos\Cliff\Cliff\bin\Debug\netcoreapp2.0\Cliff.deps.json
+C:\Users\Max\source\repos\Cliff\Cliff\bin\Debug\netcoreapp2.0\Cliff.runtimeconfig.json
+C:\Users\Max\source\repos\Cliff\Cliff\bin\Debug\netcoreapp2.0\Cliff.runtimeconfig.dev.json
+C:\Users\Max\source\repos\Cliff\Cliff\bin\Debug\netcoreapp2.0\Cliff.dll
+C:\Users\Max\source\repos\Cliff\Cliff\bin\Debug\netcoreapp2.0\Cliff.pdb
+C:\Users\Max\source\repos\Cliff\Cliff\obj\Debug\netcoreapp2.0\Cliff.csprojResolveAssemblyReference.cache
+C:\Users\Max\source\repos\Cliff\Cliff\obj\Debug\netcoreapp2.0\Cliff.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\Cliff\Cliff\obj\Debug\netcoreapp2.0\Cliff.AssemblyInfoInputs.cache
+C:\Users\Max\source\repos\Cliff\Cliff\obj\Debug\netcoreapp2.0\Cliff.AssemblyInfo.cs
+C:\Users\Max\source\repos\Cliff\Cliff\obj\Debug\netcoreapp2.0\Cliff.dll
+C:\Users\Max\source\repos\Cliff\Cliff\obj\Debug\netcoreapp2.0\Cliff.pdb
