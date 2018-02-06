@@ -11,7 +11,7 @@ namespace Cliff
 
         private static void StartAdventure()
         {
-            return;
+            
         }
     }
 }

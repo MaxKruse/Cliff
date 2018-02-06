@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cliff
+namespace Cliff.Utils
 {
-    class Stats
+    class SafeFile
     {
     }
 }
