@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Cliff
 {
-    class Player
+    class Entity
     {
+
         private int level;
 
         int hp_current;
@@ -39,6 +40,13 @@ namespace Cliff
         int priority;
 
 
+        int power;
+
+        int knowledge;
+
+        int agility;
+
+
         public int Level { get => level; set => level = value; }
         public int Hp_current { get => hp_current; set => hp_current = value; }
         public int Hp_max { get => hp_max; set => hp_max = value; }
@@ -60,12 +68,14 @@ namespace Cliff
         public float Speed_modifier { get => speed_modifier; set => speed_modifier = value; }
         public float Speed_Gauge { get => speed_Gauge; set => speed_Gauge = value; }
         public int Priority { get => priority; set => priority = value; }
+        public int Power { get => power; set => power = value; }
+        public int Knowledge { get => knowledge; set => knowledge = value; }
+        public int Agility { get => agility; set => agility = value; }
 
 
-
-        public Player(int level, int hp_current, int hp_max, float hp_max_modifier, int exp, float exp_modifier, int exp_Up, float exp_Up_modifier,
-            int attack, float attack_modifier, int defense, float defense_modifier, float critical_rate, float critical_rate_modifier,
-            float critical_damage, float critical_damage_modifier, int speed, float speed_modifier, float speed_Gauge, int priority)
+        public Entity(int level = 1, int hp_current = 50, int hp_max = 100, float hp_max_modifier = 0, int exp = 0, float exp_modifier = 0, int exp_Up = 1920, float exp_Up_modifier = 0,
+            int attack = 10, float attack_modifier = 0, int defense = 15, float defense_modifier = 0, float critical_rate = 5, float critical_rate_modifier = 0,
+            float critical_damage = 0, float critical_damage_modifier = 0, int speed = 0, float speed_modifier = 0, float speed_Gauge = 0, int priority = 0, int power = 10, int knowledge = 10, int agility = 10)
         {
             this.level = level;
             this.hp_current = hp_current;
@@ -88,9 +98,20 @@ namespace Cliff
             this.speed_modifier = speed_modifier;
             this.speed_Gauge = speed_Gauge;
             this.priority = priority;
+            this.power = power;
+            this.knowledge = knowledge;
+            this.agility = agility;
         }
 
+
+        int Next_Exp_Up()
+        {
+            return (int)(this.Exp_Up * Math.Pow(this.Exp_Up, 1.05f));
+        }
+
+        public void UpdateHealth(int amount)
+        {
+            this.Hp_current += amount;
+        }
     }
-
-
 }

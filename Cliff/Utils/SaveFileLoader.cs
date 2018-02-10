@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cliff.Utils
+namespace Cliff
 {
     class SaveFileLoader
     {
