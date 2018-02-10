@@ -11,13 +11,13 @@ namespace Cliff
 
         private static void StartAdventure()
         {
-            Player p = new Player();
+            Entity Player = new Entity();
 
             while (true)
             {
-                GUI.Draw(p);
+                GUI.Draw(Player);
 
-                Entity.UpdateHealth(p, -1);
+                Player.UpdateHealth(-1);
 
                 Console.ReadKey();
             }

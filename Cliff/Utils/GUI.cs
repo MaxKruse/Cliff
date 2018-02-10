@@ -6,7 +6,7 @@ namespace Cliff
 {
     static class GUI
     {
-        public static void Draw(Cliff.Entity p)
+        public static void Draw(Entity p)
         {
             Console.WriteLine(p.Level + " - " + p.Hp_current + " - " + p.Speed);
 
