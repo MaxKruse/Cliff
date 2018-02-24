@@ -104,14 +104,27 @@ namespace Cliff
         }
 
 
-        int Next_Exp_Up()
+        int NextExpUp()
         {
-            return (int)(this.Exp_Up * Math.Pow(this.Exp_Up, 1.05f));
+            return (int)( (this.Level * ((Math.Pow(1.05, this.Level)) / Math.PI) + 100) * Math.Pow(Math.PI, 2));
         }
 
         public void UpdateHealth(int amount)
         {
             this.Hp_current += amount;
         }
+
+        void Level_Up(){
+            int NEXT = NextExpUp();
+            if(this.Exp > NEXT){
+                this.Exp -= NEXT;
+
+                this.Level++;
+
+                
+            }
+        }
+
+
     }
 }
