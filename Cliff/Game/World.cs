@@ -11,7 +11,9 @@ namespace Cliff
 
         private static void StartAdventure()
         {
-            Entity Player = new Entity();
+            EntityManager CharacterManager = new EntityManager();
+
+            Entity Player = CharacterManager.CreateCharacter();
 
             while (true)
             {
