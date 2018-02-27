@@ -53,17 +53,5 @@ namespace Cliff{
 
         }
 
-        public void Equipitem(string s, Item i){
-
-            for (int j = 0; j < this.SlotList.Count; j++)
-            {
-                if(this.SlotList[j] == s){
-                    
-                }
-            }
-
-        }
-
-
     }
 }
